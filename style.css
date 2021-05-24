@@ -1,0 +1,127 @@
+* {
+    margin: 0px;
+}
+
+h1 {
+    font-family: Knewave, cursive;
+    font-size: 5rem;
+    text-align: center;
+}
+
+span {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 3rem;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+button:active {
+    cursor: progress;
+    transform: translateY(2px);
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.container_outside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.container_inside {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#TimerRing {
+    position: absolute;
+    background-color: darkgreen;
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
+    margin-top: -25px;
+    opacity: 0.6;
+    z-index: 0;
+}
+
+#Timer {
+    background-color: white;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+#ForwardTime {
+    cursor: pointer;
+}
+
+#ForwardTime:active {
+    cursor: progress;
+}
+
+#BackwardTime {
+    cursor: pointer;
+}
+
+#BackwardTime:active {
+    cursor: progress;
+}
+
+#Start {
+    background-color: lightgreen;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bolder;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+#Stop {
+    background-color: crimson;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bolder;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+@media (max-width: 700px) {
+    * {
+        margin: 0px;
+    }
+    body {
+        background-color: #abe9cd;
+        background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
+    }
+    .background {
+        visibility: hidden;
+    }
+    #TimerRing {
+        margin-top: 30px;
+        border-radius: 10%;
+        height: 320px;
+        width: 320px;
+    }
+    #Timer {
+        margin-top: 40px;
+        border-radius: 10%;
+        height: 300px;
+        width: 300px;
+        margin-bottom: 300px;
+    }
+}
