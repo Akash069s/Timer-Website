@@ -6,5 +6,4 @@
 2. Show the countdown animation.
 3. Have an animated outer ring that: <br>
     a. Changes color
-    b. Decreases in circumferance
 4. Have some-kid of audio that rings once the timer reaches zero    
