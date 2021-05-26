@@ -22,20 +22,20 @@
             </div>
             <div id="Timer">
                 <span id="ForwardTime">
-                <button><img src="https://img.icons8.com/cotton/64/000000/circled-up--v3.png"/></button>
-                <button><img src="https://img.icons8.com/cotton/64/000000/circled-up--v3.png"/></button>
-                <button><img src="https://img.icons8.com/cotton/64/000000/circled-up--v3.png"/></button>
+                <button onclick="Increase(1,0,0)"><img src="https://img.icons8.com/cotton/64/000000/circled-up--v3.png"/></button>
+                <button onclick="Increase(0,1,0)"><img src="https://img.icons8.com/cotton/64/000000/circled-up--v3.png"/></button>
+                <button onclick="Increase(0,0,1)"><img src="https://img.icons8.com/cotton/64/000000/circled-up--v3.png"/></button>
                 </span>
                 <span>
-                        <span id="TimeLeft">00 :00 :00</span>
+                        <span id="TimeLeft">00:00 :00</span>
                 </span>
                 <span id="BackwardTime">
-                    <button ><img src="https://img.icons8.com/cotton/64/000000/circled-down--v2.png"/></button>
-                    <button ><img src="https://img.icons8.com/cotton/64/000000/circled-down--v2.png"/></button>
-                    <button ><img src="https://img.icons8.com/cotton/64/000000/circled-down--v2.png"/></button>
+                    <button onclick="Decrease(1,0,0)" ><img src="https://img.icons8.com/cotton/64/000000/circled-down--v2.png"/></button>
+                    <button onclick="Decrease(0,1,0)"><img src="https://img.icons8.com/cotton/64/000000/circled-down--v2.png"/></button>
+                    <button onclick="Decrease(0,0,1)"><img src="https://img.icons8.com/cotton/64/000000/circled-down--v2.png"/></button>
                 </span>
                 <span id="Controls_Bottom">
-                    <button id="Start">Start</button>
+                    <button id="Start" onclick="StartTimer()">Start</button>
                     <button id="Stop">Stop</button>
                 </span>
             </div>
