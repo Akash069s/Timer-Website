@@ -22,24 +22,29 @@
             </div>
             <div id="Timer">
                 <span id="ForwardTime">
-                <button onclick="Increase(1,0,0)"><img src="https://img.icons8.com/cotton/64/000000/circled-up--v3.png"/></button>
-                <button onclick="Increase(0,1,0)"><img src="https://img.icons8.com/cotton/64/000000/circled-up--v3.png"/></button>
-                <button onclick="Increase(0,0,1)"><img src="https://img.icons8.com/cotton/64/000000/circled-up--v3.png"/></button>
+                <button id = "increase1" onclick="Increase(1,0,0)"><img src="https://img.icons8.com/cotton/64/000000/circled-up--v3.png"/></button>
+                <button id = "increase2" onclick="Increase(0,1,0)"><img src="https://img.icons8.com/cotton/64/000000/circled-up--v3.png"/></button>
+                <button id = "increase3" onclick="Increase(0,0,1)"><img src="https://img.icons8.com/cotton/64/000000/circled-up--v3.png"/></button>
                 </span>
                 <span>
                         <span id="TimeLeft">00:00 :00</span>
                 </span>
                 <span id="BackwardTime">
-                    <button onclick="Decrease(1,0,0)" ><img src="https://img.icons8.com/cotton/64/000000/circled-down--v2.png"/></button>
-                    <button onclick="Decrease(0,1,0)"><img src="https://img.icons8.com/cotton/64/000000/circled-down--v2.png"/></button>
-                    <button onclick="Decrease(0,0,1)"><img src="https://img.icons8.com/cotton/64/000000/circled-down--v2.png"/></button>
+                    <button id="decrease1" onclick="Decrease(1,0,0)" ><img src="https://img.icons8.com/cotton/64/000000/circled-down--v2.png"/></button>
+                    <button id="decrease2" onclick="Decrease(0,1,0)"><img src="https://img.icons8.com/cotton/64/000000/circled-down--v2.png"/></button>
+                    <button id="decrease3" onclick="Decrease(0,0,1)"><img src="https://img.icons8.com/cotton/64/000000/circled-down--v2.png"/></button>
                 </span>
                 <span id="Controls_Bottom">
                     <button id="Start" onclick="StartTimer()">Start</button>
-                    <button id="Stop">Stop</button>
+                    <button id="Stop" onclick="StopTimer()" hidden>Stop</button>
+                    <button id="Cancel" onclick="Cancel()">Cancel</button>
+                    <button id="StopAlarm" onclick="StopAlarm()" hidden>Mute</button>
                 </span>
             </div>
             <div id="RightBox"></div>
+            <audio id="Alarm">
+                <source src="alarm.mp3">
+            </audio>
         </div>
     </div>
 </body>
