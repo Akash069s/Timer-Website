@@ -10,3 +10,7 @@
 
 # Project Completed
 
+# New Changed Needed: 
+
+* A choice in the audio file would be much appreciated
+* Music should have a volume bar as a GUI in the website
